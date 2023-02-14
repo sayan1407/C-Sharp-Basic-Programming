@@ -10,11 +10,13 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            PrintPattern printPattern = new PrintPattern();
-            Console.WriteLine("Enter the no. of lines : ");
-            int noOfLines = Convert.ToInt32(Console.ReadLine());
-            printPattern.Pyramid(noOfLines);
-            printPattern.ReversePyramid(noOfLines);
+            Console.Write("Enter first binary number : ");
+            long num1 = Convert.ToInt64(Console.ReadLine());
+            Console.Write("Enter second binary number : ");
+            long num2 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Sum of twwo binary number is : " + BasicProgram.sumOfBinaryNums(num1, num2));
+
+
         }
     }
 
