@@ -10,11 +10,12 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Sayan\Desktop\Sample.txt";
-            int count = FileHelper.GetWordCount(path);
-            Console.WriteLine("No of words in the file : {0}", count);
-            string word = FileHelper.WordWithMaxLength(path);
-            Console.WriteLine("Word with maximum length in the file : {0}", word);
+            PrintPattern printPattern = new PrintPattern();
+            Console.WriteLine("Enter the no. of lines : ");
+            int noOfLines = Convert.ToInt32(Console.ReadLine());
+            printPattern.Pyramid(noOfLines);
+            printPattern.ReversePyramid(noOfLines);
         }
     }
+
 }

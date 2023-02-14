@@ -14,7 +14,7 @@ namespace C_Sharp_Basics
            //string text = File.ReadAllText(path);
            //string[] splitedText  = text.Split(new char[] { ' ','.'},StringSplitOptions.RemoveEmptyEntries);
            //return splitedText.Count();
-
+           
             //Same Code Using FileInfo class
             FileInfo fi = new FileInfo(path);
             StreamReader sr = fi.OpenText();
@@ -26,6 +26,7 @@ namespace C_Sharp_Basics
             }
             string text = sb.ToString();
             string[] splitedText  = text.Split(new char[] { ' ','.'},StringSplitOptions.RemoveEmptyEntries);
+    
             return splitedText.Count();
 
         }
