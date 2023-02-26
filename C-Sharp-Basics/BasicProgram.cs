@@ -100,8 +100,8 @@ namespace C_Sharp_Basics
         {
             if (b == 0)
                 return a+0;
-            a++;
-            return AddTwoNumByRecursion(a, b - 1);
+            
+            return AddTwoNumByRecursion(a+1, b - 1);
 
         }
         public static int MultiplyTwoNumByRecursion(int a, int b)
