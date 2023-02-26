@@ -96,5 +96,21 @@ namespace C_Sharp_Basics
             return revSum.ToString();
 
         }
+        public static int AddTwoNumByRecursion(int a,int b)
+        {
+            if (b == 0)
+                return a+0;
+            a++;
+            return AddTwoNumByRecursion(a, b - 1);
+
+        }
+        public static int MultiplyTwoNumByRecursion(int a, int b)
+        {
+            if (b == 0)
+                return 0;
+           
+            return a + MultiplyTwoNumByRecursion(a, b - 1);
+
+        }
     }
 }
