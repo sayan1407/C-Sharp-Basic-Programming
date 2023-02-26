@@ -21,7 +21,7 @@ namespace C_Sharp_Basics
             //    Console.Write(n + " ");
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(BasicProgram.AddTwoNumByRecursion(a, b));
+            Console.WriteLine(BasicProgram.SubtractTwoNumByRecursion(a, b));
             //Console.WriteLine(BasicProgram.MultiplyTwoNumByRecursion(a, b));
             //Console.WriteLine(BasicProgram.DivideTwoNumByRecursion(a, b));
             //Console.WriteLine(new TimeSpan(new DateTime(1,1,1).Ticks).TotalDays/365.25);
