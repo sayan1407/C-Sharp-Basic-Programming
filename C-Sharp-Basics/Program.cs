@@ -10,13 +10,15 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter first binary number : ");
-            long num1 = Convert.ToInt64(Console.ReadLine());
-            Console.Write("Enter second binary number : ");
-            long num2 = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("Sum of twwo binary number is : " + BasicProgram.sumOfBinaryNums(num1, num2));
-
-
+            DateTimeHelper dt = new DateTimeHelper(DateTime.Now);
+            Console.WriteLine(dt.Add(10).ToString("MMM dd yyyy"));
+            dt.Compare(new DateTime(2023,03,12));
+            Console.WriteLine(dt.CheckLeapYear(2200));
+            Console.WriteLine(dt.DifferenceInYear(new DateTime(2003, 12, 14)));
+            int[] arr = new int[5] { 1, 2, 3, 4, 5 };
+            IEnumerable<int> reversearr = arr.Reverse();
+            foreach (int n in reversearr)
+                Console.Write(n + " ");
         }
     }
 
