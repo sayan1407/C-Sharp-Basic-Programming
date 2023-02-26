@@ -112,5 +112,13 @@ namespace C_Sharp_Basics
             return a + MultiplyTwoNumByRecursion(a, b - 1);
 
         }
+        public static int DivideTwoNumByRecursion(int a, int b)
+        {
+            if (a == 0)
+                return 0;
+            
+            return 1 + DivideTwoNumByRecursion(a-b, b);
+
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace C_Sharp_Basics
             int b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(BasicProgram.AddTwoNumByRecursion(a, b));
             Console.WriteLine(BasicProgram.MultiplyTwoNumByRecursion(a, b));
+            Console.WriteLine(BasicProgram.DivideTwoNumByRecursion(a, b));
 
         }
     }
