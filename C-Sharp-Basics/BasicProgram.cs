@@ -99,7 +99,7 @@ namespace C_Sharp_Basics
         public static int AddTwoNumByRecursion(int a,int b)
         {
             if (b == 0)
-                return a+0;
+                return a;
             
             return AddTwoNumByRecursion(a+1, b - 1);
 
@@ -123,7 +123,7 @@ namespace C_Sharp_Basics
         public static int SubtractTwoNumByRecursion(int a, int b)
         {
             if (b == 0)
-                return a-0;
+                return a;
 
             return SubtractTwoNumByRecursion(a-1, b-1);
 
