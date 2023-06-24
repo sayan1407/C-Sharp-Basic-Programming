@@ -33,6 +33,7 @@ namespace C_Sharp_Basics
         public static string WordWithMaxLength(string path)
         {
             string text = File.ReadAllText(path);
+           
             string[] splitedText = text.Split(new char[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries);
             string strMaxLength = "";
             int max = 0;

@@ -109,6 +109,19 @@ namespace C_Sharp_Basics
             }
             
         }
+        //https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=true
+        public static int beautifulDays(int i, int j, int k)
+        {
+
+            int count = 0;
+            for(int idx = i; idx <= j;idx++)
+            {
+                if (Math.Abs(idx - BasicProgram.ReverseNum(idx)) % k == 0)
+                    count++;
+            }
+            return count;
+        }
+        
 
     }
 }

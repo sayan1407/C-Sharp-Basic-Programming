@@ -22,11 +22,19 @@ namespace C_Sharp_Basics
     {
         static void Main(string[] args)
         {
-            // HackerRankSolution.SimpleTextEditor();
-            //int n = HackerRankSolution.squares(16, 25);
-            int fine = HackerRankSolution.libraryFineManual(5, 3, 2019, 6, 3, 2018);
-            Console.WriteLine(fine);
-            
+            DelegatePractice delegatePractice = new DelegatePractice();
+            DelegatePractice.ArithmaticOps arithmaticOps = delegatePractice.Sum;
+            Console.WriteLine(arithmaticOps(10, 5));
+            arithmaticOps += delegatePractice.Subtract;
+            Console.WriteLine(arithmaticOps(10, 5));
+            //Action<int,int> action = delegatePractice.Sum;
+            //action += delegatePractice.Subtract;
+            //action(10, 5);
+            Func<int, int, int> ops = delegatePractice.Subtract;
+            Console.WriteLine(ops(10,5));
+            ops = delegatePractice.Sum;
+            Console.WriteLine(ops(10, 5));
+
         }
     }
 

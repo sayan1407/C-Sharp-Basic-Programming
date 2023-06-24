@@ -129,5 +129,30 @@ namespace C_Sharp_Basics
             return SubtractTwoNumByRecursion(a-1, b-1);
 
         }
+        public static void TossNTimes(int n)
+        {
+            int totalHead = 0;
+            int totalTail = 0;
+            int result;
+            Random rand = new Random();
+            for (int i =0; i < n;i++)
+            {
+                
+                result = rand.Next(2);
+                if (result == 0)
+                    totalHead++;
+                else
+                    totalTail++;
+            }
+            Console.WriteLine("Number of heads : "+totalHead);
+            Console.WriteLine("Number of tails : " + totalTail);
+
+        }
+        public static int Toss()
+        {
+            Random rand = new Random();
+            int result = rand.Next(2);
+            return result;
+        }
     }
 }
